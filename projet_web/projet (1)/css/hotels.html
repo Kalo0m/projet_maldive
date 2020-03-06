@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/all.css">
+    <script type="text/javascript" src="js/hour.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700" rel="stylesheet"> 
+    <title>Acceuil</title>
+
+</head>
+
+<body>
+    <style type="text/css">
+        .header{background: url('ressources/calendrier.jpg'); background-size: cover; background-position: center; background-attachment: fixed;}
+    </style>
+
+    <nav class="nav">
+      <div class="link-container">
+        <a href="index.html" class="titre_gauche bold">Les Maldives</p></a>
+    
+        <a href="index.html" class="link"><i class="fas fa-home"></i> Acceuil</a>
+        <a href="semaine.html" class="link active"><i class="fas fa-calendar-week"></i> Semaine Type</a>
+        <a href="activites.html" class="link"><i class="fas fa-hiking"></i>Les activités</a>
+        <a href="dddd.html" class="link">dddd</a>
+      </div>
+      <div class = "presentation_container">
+        <div id="clock"><img src="ressources/clock.png"></div>
+        <div class="hour_container">
+          <div class="hour_pic " id="fr-flag"><img src="ressources/fr.gif"></div>
+          
+          <div class="hour_name bold" id="paris">Paris :</div>
+          <span id="date_heure"></span>
+          <script type="text/javascript">window.onload = date_heure('date_heure');</script>
+        
+          <span id="line"></span>
+        
+         
+          <div class="hour_pic" id="male-flag"><img src="ressources/mal.png"></div>
+          <div class="hour_name bold " id="male">Male :</div>
+          
+          
+          <span id="date_heure2"></span>
+          <script type="text/javascript">window.onload = date_heure2('date_heure2');</script>
+  
+      </div>
+        
+        
+     
+
+    
+
+   
+</nav>
+<header class="header">
+<h1 class="ml2">Une semaine aux Maldives</h1>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="js/test.js"></script>
+   <div class="view">
+       <svg fill="#fff" viewBox="0 0 24 24" width="24"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/></svg>
+   </div>
+</header>
+	

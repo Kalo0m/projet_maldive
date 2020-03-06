@@ -1,0 +1,30 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta name="viewport" content="width=device-width"> 
+			<meta http-equiv="content-type" content="text/html; charset=UTF-8"/> 
+			
+			<title>Météo avec Géolocalisation</title> 	
+			
+			<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			var maLatitude;		/*Variable gobale contenant la latitude*/
+			var maLongitude;	/*Variable gobale contenant la longitude*/	
+		
+			if (navigator.geolocation)
+				navigator.geolocation.getCurrentPosition(showPosition);
+			else
+			alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
+			});	
+			
+			function showPosition(position){
+				maLatitude= position.coords.latitude;
+				maLongitude= position.coords.longitude;	
+				alert(maLatitude + ", " + maLongitude );
+		}	
+	</script>
+			<style type="text/css"></style>
+		</head>
+		<body>	
+		</body>	
+	</html>	
